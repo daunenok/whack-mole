@@ -1,0 +1,77 @@
+html {
+	min-height: 100%;
+	background: linear-gradient(to bottom right, goldenrod, yellow);
+}
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: 24px cursive;
+	font-weight: bold;
+}
+.scores {
+	background-color: yellow;
+	border-radius: 5px;
+	margin-left: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	font-size: 120%;
+}
+.container {
+	width: 750px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+.item {
+	width: 250px;
+	height: 200px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	position: relative;
+}
+.mole {
+	position: absolute;
+	top: 40px;
+	left: 30px;
+	z-index: 1;
+	transition: all 1s;
+}
+img[src="soul.png"] {
+	z-index: 2;
+}
+.mole.hidden {
+	top: 70px;
+	display: none;
+}
+.buttons {
+	text-align: center;
+	margin-top: 70px;
+}
+button {
+	font-size: 120%;
+	font-family: cursive;
+	cursor: pointer;
+	padding: 10px 20px;
+}
+.alert {
+	width: 300px;
+	height: 230px;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-color: #fff;
+	z-index: 3;
+	font-family: cursive;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 120%;
+	box-shadow: 0 0 20px #000;
+	display: none;
+}
